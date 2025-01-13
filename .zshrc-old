@@ -1,0 +1,5 @@
+source /home/mperin/.zshrc
+
+source ~/init.sh
+
+cd

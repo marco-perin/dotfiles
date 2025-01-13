@@ -1,0 +1,8 @@
+#! /bin/sh
+#
+
+# echo "Executing Script"
+
+nitrogen --restore
+
+notify-send -i display "Display profile" "$AUTORANDR_CURRENT_PROFILE"

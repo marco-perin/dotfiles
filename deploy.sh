@@ -11,17 +11,17 @@ symlinkFile() {
     mkdir -p $(dirname "$destination")
 
     if [ -L "$destination" ]; then
-        echo "[WARNING] $filename already symlinked"
+        echo -e "[\e[33mWARNING\e[0m] $filename already symlinked"
         return
     fi
 
     if [ -e "$destination" ]; then
-        echo "[ERROR] $destination exists but it's not a symlink. Please fix that manually"
+        echo -e "[\e[31mERROR\e[0m] $destination exists but it's not a symlink. Please fix that manually"
         exit 1
     fi
 
     ln -s "$filename" "$destination"
-    echo "[OK] $filename -> $destination"
+    echo -e "[\e[32mOK\e[0m] $filename -> $destination"
 }
 
 deployManifest() {

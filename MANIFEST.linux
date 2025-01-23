@@ -12,14 +12,7 @@ i3status|symlink|.config
 hypr|symlink|.config
 waybar|symlink|.config
 waypaper|symlink|.config
-#.screenlayout|symlink|
-#.ghci|symlink|
-#.i3status.conf|symlink|
 settings.ini|symlink|.config/gtk-3.0
 # TODO: check that additional confs-don't brake in gtk4
 settings.ini|symlink|.config/gtk-4.0
-#.urxvt/ext/resize-font|symlink|
-#.gdbinit|symlink|
-# gf2_config.ini|symlink|.config
-#.SciTEUser.properties|symlink|
-
+ly|symlink|.config
